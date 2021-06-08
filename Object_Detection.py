@@ -1,10 +1,10 @@
 import cv2
 import numpy as np
 
-net = cv2.dnn.readNet("E:/maskDetect/yolov3_testing.cfg", "E:/maskDetect/yolov3_training_last.weights")
+net = cv2.dnn.readNet("./yolov3_testing.cfg", "./yolov3_training_last.weights")
 
 classes = []
-with open("E:/maskDetect/classes.txt", "r") as f:
+with open("./classes.txt", "r") as f:
     classes = f.read().splitlines()
 
 cap = cv2.VideoCapture(0)
